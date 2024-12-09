@@ -27,13 +27,13 @@ export default function Navbar() {
         className={`${
           navOpen ? 'flex' : 'hidden'
         } md:flex flex-col md:flex-row items-center gap-y-6 md:gap-x-8 mt-4 md:mt-0 md:order-none space-x-8`}>
-        <Link href="/" className="nav-link hover:text-blue-400">
+        <Link href="/Homepage" className="nav-link hover:text-blue-400">
           Home
         </Link>
         <Link href="/services" className="nav-link hover:text-blue-400">
           Service
         </Link>
-        <Link href="/about" className="nav-link hover:text-blue-400">
+        <Link href="/About" className="nav-link hover:text-blue-400">
           About Us
         </Link>
         <Link href="/blog" className="nav-link hover:text-blue-400">

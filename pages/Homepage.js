@@ -1,21 +1,17 @@
 "use client";
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Joinus from "../components/Joinus";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export default function Homepage() {
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
-        console.log(new Date().toISOString());
-    }, []); // Logs timestamp to the console on component mount.
-
-    if (!isClient) {
-        return null;
-    }
+    }, []);
 
     const cardsData = [
       {
@@ -65,6 +61,7 @@ export default function Homepage() {
 
     return (
         <>
+          
           <section
             className="w-full h-screen bg-cover bg-center relative"
             style={{ backgroundImage: "url('./wallpaper1.jpg')" }}

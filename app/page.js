@@ -2,6 +2,7 @@
 
 import Navbar from "../components/Navbar";
 import Homepage from "../pages/Homepage";
+import About from "../pages/About";
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
@@ -11,17 +12,14 @@ export default function Home() {
 
     useEffect(() => {
         setIsClient(true);
-        console.log(new Date().toISOString());
-    }, []); // This will log the timestamp to the console on component mount.
-
-    if (!isClient) {
-        return null;
-    }
+    }, []);
 
     return (
         <>
           <Navbar/>
           <Homepage/>
+          
+
         </>
     );
 } 
